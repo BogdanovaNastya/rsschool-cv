@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CV</title>
+    </head>
+    <body>
+    <h1>Bogdanova Anastasiia</h1>
+    <img src="img/menotmeme.jpg" alt="meme_by_my_colleague">
+    <h2>Contact information:</h2>
+    <p>mail: spbnastyab@gmail.com</p>
+    <p>telegram: https://t.me/AnastasiiaBogdanova</p>
+    <p>linkedin: https://www.likedin.com/in/anastasia-bogdanova-b63582119/</p>
+
+    <h2>About me:</h2>
+    <p>graduated from Higher School of Economics, have Bachelor in Logistics</p>
+    <p>live in Saint-Petersburg</p>
+    <p>work as BI-developer, create dashboards using Qlikview and Qlik Sense</p>
+    <p>due to politics we have to change foreign BI-platform to Russian, so I need to learn front-end</p>
+    <img src="img/meme.jpg" alt="meme_by_my_colleague">
+    <h2>Skills:</h2>
+    <p>Excel guru</p>
+    <p>Mind reading of business users</p>
+    <p>Data visualization and data modeling using Qlik tools</p>
+    <p>SQL</p>
+    <h2>Code examples:</h2>
+    <p>
+        # I guess something is better than nothing<br>
+        SELECT <br>
+        &emsp; ma.first_name,<br>
+        &emsp;    ma.last_name,<br>
+        &emsp;    DATE_FORMAT(SEC_TO_TIME(AVG(ca.duration_sec)),"%H:%i:%s") as avg_duration<br>
+        FROM calls as ca<br>
+        JOIN clients as cl ON cl.id = ca.client_id<br>
+        JOIN managers as ma ON ma.id = ca.manager_id<br>
+        LEFT JOIN companies as co ON cl.company_id = co.id<br>
+        WHERE <br>
+        &emsp;    co.name = 'Cloud Computing'<br>
+        GROUP BY <br>
+        &emsp;    ma.id<br>
+        ORDER BY <br>
+        &emsp;    avg_duration DESC<br>
+    </p>
+    <h2>Experience:</h2>
+    <p>0.5 year as Data Analyst</p>
+    <p>1.5 years as BI-developer</p>
+    <h2>Languages:</h2>
+    <p>Russian - Native</p>
+    <p>English - Upper-Intermediate</p>
+    </body>
+</html>
